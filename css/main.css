@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* wrap 영역 */
+.pre_wrap {
+    width: 100%;
+    height: 976px;
+    min-width: 1320px;
+    background-color: #ffffff;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    height: 5000px;
+    min-width: 1320px;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+/* inner 공통 */
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    /* outline: 1px dotted red; */
+}
+
+
+/* header 영역 */
+.header {
+    height: 116px;
+    background-color: #ffffff;
+    /* outline: 1px dotted red; */
+}
+
+/* main logo 영역 */
+.header .main_logo {
+    width: 150px;
+    height: 100%;
+    float: left;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_logo img {
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 20px;
+    /* outline: 1px dotted red; */
+}
+
+/* main menu 영역 */
+.header .main_menu_wrap {
+    width: 1150px;
+    height: 100%;
+    float: left;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_menu_wrap .main_menu_wrap_double {
+    float: right;
+    width: 900px;
+    height: 116px;
+    /* outline: 1px dotted red; */
+
+}
+
+
+/* main menu 1 depth 영역 */
+.header .main_menu_wrap .main_menu_wrap_double > ul {
+    float: right;
+    height: 60px;
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li {
+    float: left;
+    position: relative;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li > a {
+    display: block;
+    width: 150px;
+    height:116px;
+    line-height: 116px;
+    text-align: center;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li > a:hover {
+    background-color: #f77537;
+    color: #ffffff;
+}
+
+
+/* main menu 2 depth 영역 */
+.header .main_menu_wrap .main_menu_wrap_double > ul > li > ul {
+    /* width: 150px; */
+    height: 300px;
+    position: absolute;
+    z-index: 30;
+    background-color: #ffffff;
+    display: none;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_menu_wrap .main_menu_wrap_double ul:hover > li > ul {
+    display: block;
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li > ul > li {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    /* outline: 1px dotted red; */
+}
+
+/* main menu 2 depth 좌우 패딩 영역 */
+.header .main_menu_wrap .main_menu_wrap_double > ul > li:first-child > ul {
+    right: 0;
+    padding-left: 434px;
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li:nth-child(5) > ul {
+    padding-right: 116px;
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_menu_wrap .main_menu_wrap_double > ul > li > ul > li > a:hover {
+    color: #ffffff;
+    background-color: #f77537;
+}
+
+
+
+
+
+/* 네이버 카페 로고 영역 */
+.header .main_menu_wrap .main_menu_wrap_double >ul > li:last-child .naver_cafe_logo {
+    width: 116px;
+    height: 116px;
+    float: right;
+    /* outline: 1px dotted red; */
+}
+
+.header .main_menu_wrap .main_menu_wrap_double >ul > li:last-child .naver_cafe_logo > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* slide 문구 & 사진 영역 */
+.slide_picture_background {
+    width: 100%;
+    height: 860px;
+    background-image: url(../img/slides/solar_panel_wide_small_dark_3.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* position: relative; */
+}
+
+.slide_picture_background .slide_text_wrap {
+    height: 770px;
+}
+
+.slide_picture_background .slide_text_wrap p:first-child {
+    color: #8fb5cc;
+    font-size: 180px;
+    font-weight: 800;
+    opacity: .2;
+    padding-top: 150px;
+    letter-spacing: 1%;
+}
+
+.slide_picture_background .slide_text_wrap p:last-child {
+    color: #f0f3f5;
+    font-size: 56px;
+    font-weight: 100;
+    opacity: .8;
+    padding-top: 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 280px;
+}
+
+.slide_picture_background .slide_text_wrap p span {
+    font-weight: 400;
+}
+
+
+/* 슬라이드 & top 영역 notice 공지사항 공통 */
+.slide_rest_contents {
+    width: 100%;
+    height: 90px;
+    /* outline: 1px dotted red; */
+}
+
+/* 슬라이드 조작 버튼 영역 */
+.slide_rest_contents .slide_button_wrap {
+    width: 180px;
+    height: 90px;
+    float: left;
+    /* outline: 1px dotted red; */
+}
+
+.slide_rest_contents .slide_button_wrap .slide_button_left_wrap {
+    width: 90px;
+    height: 90px;
+    float: left;
+    background-color: #ffffff;
+    /* outline: 1px dotted red; */
+}
+
+.slide_rest_contents .slide_button_wrap .slide_button_left_wrap:hover {
+    background-color: #01204c;
+}
+
+.slide_rest_contents .slide_button_wrap .slide_button_right_wrap {
+    width: 90px;
+    height: 90px;
+    float: left;
+    background-color: #ffffff;
+    border-radius: 0 15px 0 0;
+    /* outline: 1px dotted red; */
+}
+
+.slide_rest_contents .slide_button_wrap .slide_button_right_wrap:hover {
+    background-color: #01204c;
+}
+
+/* top 영역 notice 공지사항 */
+.slide_rest_contents .notice_top_wrap {
+    width: 1000px;
+    height: 90px;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 15px 0 0 0;
+    /* outline: 1px dotted red; */
+}
+
+.slide_rest_contents .notice_top_wrap .notice_button_wrap {
+    width: 150px;
+    height: 90px;
+    float: left;
+    /* outline: 1px dotted red; */
+
+}
+
+.slide_rest_contents .notice_top_wrap .notice_button_wrap > a {
+    display: block;
+    width: 150px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    /* outline: 1px dotted red; */
+}
+
+.slide_rest_contents .notice_top_wrap .notice_text_wrap .notice_text_wrap_double {
+    float: left;
+    width: 650px;
+    height: 90px;
+}
+
+.slide_rest_contents .notice_top_wrap .notice_text_wrap .notice_text_wrap_double p:first-child {
+    float: left;
+    height: 90px;
+    line-height: 90px;
+}
+
+.slide_rest_contents .notice_top_wrap .notice_text_wrap .notice_text_wrap_double p:first-child > a {
+    color: #828282;
+}
+
+.slide_rest_contents .notice_top_wrap .notice_text_wrap .notice_text_wrap_double p:last-child {
+    float: right;
+    height: 90px;
+    line-height: 90px;
+    color: #b3b3b3;
+}
+
+
+/* container_top 영역 공통 */
+.container_top {
+    height: 1940px;
+    /* outline: 1px dotted red; */
+}
+
+/* Advantage 영역 */
+.container_top .advantage_wrap {
+    height: 490px;
+    padding-top: 120px;
+    /* outline: 1px dotted red; */
+}
+
+.container_top .advantage_wrap .advantage_title {
+    height: 110px;
+    line-height: 110px;
+    /* outline: 1px dotted red; */
+
+}
+
+.container_top .advantage_wrap .advantage_title p {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #222222;
+    /* outline: 1px dotted red; */
+
+}
+
+.container_top .advantage_wrap .advantage_box {
+    height: 380px;
+    /* outline: 1px dotted red; */
+
+}
+
+.container_top .advantage_wrap .advantage_box .advantage_list {
+    width: 260px;
+    height: 100%;
+    float: left;
+    /* outline: 1px dotted red; */
+}
+
+.container_top .advantage_wrap .advantage_box .advantage_list .advantage_picture {
+    text-align: center;
+    height: 150px;
+    /* outline: 1px dotted red; */
+}
+
+.container_top .advantage_wrap .advantage_box .advantage_list .advantage_picture > img {
+    padding-top: 35px;
+}
+
+.container_top .advantage_wrap .advantage_box .advantage_list .advantage_text {
+    text-align: center;
+    /* outline: 1px dotted red; */
+}
+
+.container_top .advantage_wrap .advantage_box .advantage_list .advantage_text > p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: #262629;
+}
+
+.container_top .advantage_wrap .advantage_box .advantage_list .advantage_text > p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b6b6c;
+}
+
+/* Our Construction 영역 */
+.our_construction_wrap {
+    height: 1320px;
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_construction_title {
+    height: 110px;
+    line-height: 110px;
+}
+
+.our_construction_wrap .our_construction_title p {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #222222;
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_costruction_board_wrap {
+    height: 1000px;
+    /* outline: 1px dotted red; */
+}
+
+/* construction top 영역 */
+.our_construction_wrap .our_costruction_board_wrap .board_top {
+    height: 500px;
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_costruction_board_wrap .board_top .board_top_list .board_content {
+    width: 380px;
+    height: 420px;
+    float: left;
+    position: relative; /* relative */
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_costruction_board_wrap .board_top .board_top_list .board_content:nth-child(2),.board_content:nth-child(3) {
+    margin-left: 80px;
+}
+
+/* construction bottom 영역 */
+.our_construction_wrap .our_costruction_board_wrap .board_bottom {
+    height: 500px;
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_costruction_board_wrap .board_bottom .board_bottom_list .board_content {
+    width: 380px;
+    height: 420px;
+    float: left;
+    position: relative; /* relative */
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_costruction_board_wrap .board_bottom .board_bottom_list .board_content:nth-child(2),.board_content:nth-child(3) {
+    margin-left: 80px;
+}
+
+/* construction 사진 공통 */
+.our_construction_wrap .our_costruction_board_wrap .board_content img {
+    object-fit: cover;
+    width: 380px;
+    height: 420px;
+    /* outline: 1px dotted red; */
+}
+
+
+
+/* 발전소 공사 문구 공통, position 적용 */
+.our_construction_wrap .our_costruction_board_wrap .board_content .board_text_wrap {
+    position: absolute;
+    width: 290px;
+    height: 75px;
+    padding-top: 25px;
+    line-height: 25px;
+    bottom: 0;
+    background-color: #f8f8f8;
+}
+
+
+/* 발전소 공사 문구 font-style */
+.our_construction_wrap .our_costruction_board_wrap .board_content .board_text_wrap p:first-child {
+    color: #f67a46;
+    font-size: 13px;
+    /* outline: 1px dotted red; */
+}
+
+.our_construction_wrap .our_costruction_board_wrap .board_content .board_text_wrap p:last-child {
+    color: #2a2a2a;
+    font-size: 16px;
+    /* outline: 1px dotted red; */
+}
+
+
+/* read more wrap */
+.read_more_wrap {
+    width: 280px;
+    padding: 0 510px;
+
+}
+
+.read_more_button {
+    width: 280px;
+    height: 65px;
+
+}
+
+/* read_more_button 공통 */
+/* read_more_button 공통 */
+.read_more_button > img {
+    width: 65px;
+    height: 65px;
+    float: left;
+
+    /* outline: 1px dotted red; */
+
+}
+
+.read_more_button > p {
+    font-weight: 600;
+    font-size: 13px;
+    width: 200px;
+    height: 65px;
+    padding-left: 15px;
+    line-height: 65px;
+    color: #383838;
+    float: left;
+
+    /* outline: 1px dotted red; */
+
+}
+
+
+/* vision wrap 등대 */
+
+.vision_picture_background {
+    width: 100%;
+    height: 860px;
+    background-image: url(../img/vision/light_house_wide_dark.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.vision_picture_background .vision_text_wrap {
+    width: 740px;
+    height: 236px;
+    padding-top: 300px;
+    margin: 0 auto;
+    text-align: center;
+    /* outline: 1px dotted red; */
+}
+
+.vision_picture_background .vision_text_wrap .vision_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 200;
+    opacity: .8;
+    /* outline: 1px dotted red; */
+}
+
+.vision_picture_background .vision_text_wrap .vision_title > span {
+    font-weight: 600;
+}
+
+.vision_picture_background .vision_text_wrap .vision_button_wrap {
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    /* outline: 1px dotted red; */
+}
+
+.vision_picture_background .vision_text_wrap .vision_button_wrap > a {
+    display: block;
+    float: left;
+}
+
+
+
+.vision_picture_background .vision_text_wrap .vision_button_wrap > a {
+    width: 355px;
+    height: 100%;
+    border: 2px solid rgb(125, 125, 125,.5);
+    box-sizing: border-box;
+    background-color: rgb(125, 125, 125,.1);
+    /* outline: 1px dotted red; */
+}
+
+.vision_picture_background .vision_text_wrap .vision_button_wrap > a:last-child {
+    margin-left: 30px;
+}
+
+.vision_picture_background .vision_text_wrap .vision_button_wrap > a:hover {
+    background-color: rgb(125, 125, 125,.5);
+}
+
+.vision_picture_background .vision_text_wrap .vision_button_wrap > a .vision_button > p {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+/* container bottom 부터 할 차례 */
